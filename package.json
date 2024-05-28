@@ -1,0 +1,21 @@
+{
+  "name": "free-lyrics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "cp out/free-lyrics.js ~/.config/spicetify/Extensions/",
+    "build": "rollup --config rollup.config.mjs && cjstoesm out/free-lyrics.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "genius-lyrics-api": "^3.2.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "cjstoesm": "^2.1.2"
+  }
+}
